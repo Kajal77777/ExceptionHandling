@@ -1,0 +1,15 @@
+package com.exp.java;
+
+import java.util.Scanner;
+
+public class Driver {
+	public static void main(String[] args) 
+	{
+		Validation v=new Validation();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter age");
+		int age=sc.nextInt();
+		v.check(age);
+		
+	}
+}
