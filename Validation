@@ -1,0 +1,33 @@
+package com.exp.java;
+
+public class Validation {
+	
+	public void check(int age)
+	{
+		if(age>=5)
+		{
+			System.out.println("get Admission");
+		}
+		else if(age<=5)
+		{
+			try
+			{
+				throw new SchoolAdm("you are not elligible");
+			}
+			catch(SchoolAdm m)
+			{
+				System.out.println(m.getMessage());
+			}
+		}	
+	}
+}
+
+/*
+enter age
+1
+you are not elligible
+
+enter age
+5
+get Admission
+*/
